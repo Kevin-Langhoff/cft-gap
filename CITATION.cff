@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the paper below."
+title: "modular-bootstrap-2d: code for 'Constraining the spectral gap of 2d CFTs just above c=1'"
+type: software
+license: MIT
+authors:
+  - given-names: Nathan
+    family-names: Benjamin
+    affiliation: "Department of Physics and Astronomy, University of Southern California"
+  - given-names: Kevin
+    family-names: Langhoff
+    affiliation: "Center for Theoretical Physics, Massachusetts Institute of Technology"
+  - given-names: Wei
+    family-names: Li
+    affiliation: "Department of Physics, Yale University"
+  - given-names: Jesse
+    family-names: Thaler
+    affiliation: "Center for Theoretical Physics, Massachusetts Institute of Technology"
+preferred-citation:
+  type: article
+  title: "Constraining the spectral gap of 2d CFTs just above c=1"
+  authors:
+    - given-names: Nathan
+      family-names: Benjamin
+    - given-names: Kevin
+      family-names: Langhoff
+    - given-names: Wei
+      family-names: Li
+    - given-names: Jesse
+      family-names: Thaler
+  notes: "Preprint MIT-CTP/6144"

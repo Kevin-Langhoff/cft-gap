@@ -1,0 +1,1529 @@
+{
+  "description": "Known unitary, compact, bosonic 2d CFTs with 1 < c <= 3/2 and Delta_gap <= 3/5. c and gap are exact fractions, c_float and gap_float their float values. Delta_gap is the dimension of the lowest non-vacuum Virasoro primary of any spin. Fig. 1 draws each entry of marks as a grey cross at (c - 1, gap) in its right panel, and c_3_2_segment as a grey bar; the entries of c_3_2_points lie on that bar and are not drawn separately. Theories whose gap is known only as a bracket are not listed and not drawn.",
+  "scope_note": "Every listed theory has a conserved current beyond the stress tensor (spin 1 or 2 for products and the c = 3/2 lines, higher-spin currents in the bosonized N=1 models, W-algebra currents in the parafermion theories), so none satisfies the twist-gap assumption of the certified exclusions. The marks show where explicit theories sit; they do not test the dual bounds.",
+  "fields": {
+    "c, gap": "exact central charge and gap, as fractions",
+    "c_float, gap_float": "the same as floats (what the figure plots, with x = c_float - 1)",
+    "families": "construction classes that produce the point, keys of family_names",
+    "labels": "the constructions that give the point (several where a point arises in several ways)"
+  },
+  "label_shorthand": "M(p,q) Virasoro minimal model; TCI tricritical Ising; SM or MM superconformal minimal model; (A,A), (A,D), (D,A), (A,E) modular-invariant types; Bos[sigma] and Bos[Gsigma] the two bosonizations of a fermionic N=1 model; ext and aut extension and automorphism invariants; /Z2diag diagonal Z2 gauging; /C charge-conjugation orbifold; G_k/H coset; SC J order n h_J X: the simple current J, of order n and weight h_J (X = h_J mod 1), that builds the invariant",
+  "family_names": {
+    "n1": "N=1 minimal models, bosonized",
+    "pf": "Z_k parafermions",
+    "pf_orb": "parafermion orbifolds",
+    "w": "W(g) minimal models",
+    "prod": "products of minimal models",
+    "gauged": "gauged or extended products",
+    "coset": "other G/H cosets",
+    "c32": "c = 3/2 points"
+  },
+  "n_points": 187,
+  "n_marks": 171,
+  "c_3_2_segment": {
+    "c": "3/2",
+    "gap_lo": "0",
+    "gap_hi": "3/8",
+    "note": "the c = 3/2 continuous families fill 0 < gap <= 3/8; drawn as a grey bar at c - 1 = 0.5"
+  },
+  "marks": [
+    {
+      "c": "8/7",
+      "gap": "1/14",
+      "c_float": 1.1428571428571428,
+      "gap_float": 0.07142857142857142,
+      "families": ["pf_orb"],
+      "labels": ["Z5 parafermion / C: SO(10)_2/U(5)", "Z5 parafermion / C (charge-conjugation orbifold of diagonal)", "Z5 parafermion / charge conjugation (SU(2)_5/O(2))"]
+    },
+    {
+      "c": "8/7",
+      "gap": "4/35",
+      "c_float": 1.1428571428571428,
+      "gap_float": 0.11428571428571428,
+      "families": ["pf"],
+      "labels": ["Z5 parafermion SU(2)_5/U(1)", "Z5 parafermion (diagonal)", "W5 minimal model p=6 = Z5 parafermion"]
+    },
+    {
+      "c": "81/70",
+      "gap": "3/35",
+      "c_float": 1.1571428571428573,
+      "gap_float": 0.08571428571428572,
+      "families": ["n1"],
+      "labels": ["N=1 minimal m=5 A-type: SU(5)_2/S(U(2)xU(3))", "N=1 SM m=5 A-series (bosonized)", "N=1 SM m=5 (A4,A6)", "SU(2)_3xSU(2)_2/SU(2)_5 (N=1 MM m=5)"]
+    },
+    {
+      "c": "6/5",
+      "gap": "3/40",
+      "c_float": 1.2,
+      "gap_float": 0.075,
+      "families": ["w", "prod"],
+      "labels": ["Ising x TCI = E8_2/(E7_2 x U(1))", "Ising x TCI", "Ising x M(4,5)", "W3 p=5 / C (charge-conjugation orbifold) = SU(3)_2/U(1)^2 / S3", "W3 p=5 / S3 = Ising x TCI"]
+    },
+    {
+      "c": "6/5",
+      "gap": "4/45",
+      "c_float": 1.2,
+      "gap_float": 0.08888888888888889,
+      "families": ["pf_orb", "w"],
+      "labels": ["W3 minimal p=5: SU(3)_3/U(2)", "W3 minimal p=5 (diagonal)", "W3 minimal model p=5 (diagonal)", "SU(3)_2/U(1)^2 / A4 (both discrete torsions)", "W3 minimal model p=5"]
+    },
+    {
+      "c": "6/5",
+      "gap": "1/5",
+      "c_float": 1.2,
+      "gap_float": 0.2,
+      "families": ["pf_orb", "pf", "w", "gauged"],
+      "labels": ["Ising x TCI (Z2 ext) = SU(3)_2/U(1)^2", "(Ising x TCI)/Z2diag = SU(3)_2/U(1)^2", "SU(3)_2/U(1)^2 generalized parafermion (diagonal)", "(Ising x M(4,5))/Z2diag", "W3 p=5 Z3 extension = (Ising x TCI)/Z2", "SU(3)_2/U(1)^2 / V4 (Verlinde Z2xZ2 = Z_k x Z_k at k=2, both torsions)", "(Ising x M(4,5))/Z2_diag", "(Ising x TCI)/Z2diag", "W3 minimal model p=5 [extension: SC J=(0, 0, 1) order 3 h_J=2 X=0]"]
+    },
+    {
+      "c": "5/4",
+      "gap": "1/16",
+      "c_float": 1.25,
+      "gap_float": 0.0625,
+      "families": ["n1", "pf_orb"],
+      "labels": ["N=1 minimal m=6 A-type: SU(6)_2/S(U(2)xU(4))", "N=1 SM m=6 A-series (bosonized)", "Z6 parafermion / C (charge-conjugation orbifold of diagonal)", "Z6 parafermion / D2 (sigma=+)", "N=1 SM m=6 (A5,A7) Bos[sigma]", "N=1 SM m=6 (A5,A7) Bos[Gsigma]", "SU(2)_4xSU(2)_2/SU(2)_6 (N=1 MM m=6)", "Z6 parafermion / charge conjugation (SU(2)_6/O(2))"]
+    },
+    {
+      "c": "5/4",
+      "gap": "5/48",
+      "c_float": 1.25,
+      "gap_float": 0.10416666666666667,
+      "families": ["n1", "pf_orb", "pf"],
+      "labels": ["Z6 parafermion SU(2)_6/U(1)", "Z6 parafermion (diagonal)", "Z6 parafermion / Cg (odd-reflection orbifold of diagonal)", "N=1 SM m=6 (D4,A7) ext Bos[sigma]", "N=1 SM m=6 (A5,D5) aut Bos[sigma]", "SU(2)_4xSU(2)_2/SU(2)_6 (N=1 MM m=6) [automorphism (permutation): SC J=(0, 0, 1) order 2 h_J=7/2 X=1/2]", "SU(2)_4xSU(2)_2/SU(2)_6 (N=1 MM m=6) [extension: SC J=(0, 1, 1) order 2 h_J=3 X=0]", "W6 minimal model p=7 = Z6 parafermion"]
+    },
+    {
+      "c": "5/4",
+      "gap": "1/8",
+      "c_float": 1.25,
+      "gap_float": 0.125,
+      "families": ["n1", "pf_orb"],
+      "labels": ["Z6 parafermion / D2 (sigma=-)", "N=1 SM m=6 (A5,D5) aut Bos[Gsigma]"]
+    },
+    {
+      "c": "5/4",
+      "gap": "1/6",
+      "c_float": 1.25,
+      "gap_float": 0.16666666666666666,
+      "families": ["n1", "pf"],
+      "labels": ["Z6 parafermion D-type automorphism (= Z2 orbifold)", "N=1 SM m=6 (D4,A7) ext Bos[Gsigma]", "W6 minimal model p=7 = Z6 parafermion [automorphism (permutation): SC J=(0, 0, 3) order 2 h_J=3/2 X=1/2]"]
+    },
+    {
+      "c": "14/11",
+      "gap": "3/44",
+      "c_float": 1.2727272727272727,
+      "gap_float": 0.06818181818181818,
+      "families": ["coset"],
+      "labels": ["SO(5)_2/SU(2)_20 (principal)", "SO(5)_2/SU(2)_20 principal (diagonal)", "SO(5)_2/SU(2)_20 fixed-point-swap automorphism"]
+    },
+    {
+      "c": "14/11",
+      "gap": "4/55",
+      "c_float": 1.2727272727272727,
+      "gap_float": 0.07272727272727272,
+      "families": ["coset"],
+      "labels": ["SU(5)_1/SU(2)_20 (principal; SU(5)_1 > SO(5)_2 conformal)", "SU(5)_1/SU(2)_20 principal (diagonal) = SO(5)_2/SU(2)_20 extension"]
+    },
+    {
+      "c": "14/11",
+      "gap": "6/55",
+      "c_float": 1.2727272727272727,
+      "gap_float": 0.10909090909090909,
+      "families": ["coset"],
+      "labels": ["SU(5)_1/SU(2)_20 fixed-point-swap automorphism"]
+    },
+    {
+      "c": "13/10",
+      "gap": "1/20",
+      "c_float": 1.3,
+      "gap_float": 0.05,
+      "families": ["prod"],
+      "labels": ["Ising x M(5,6) = E7_2/(SO(12)_2 x U(1))", "Ising x M(5,6)"]
+    },
+    {
+      "c": "13/10",
+      "gap": "19/280",
+      "c_float": 1.3,
+      "gap_float": 0.06785714285714285,
+      "families": ["w"],
+      "labels": ["W(E7) minimal p=20 (diagonal)", "W(E7) p=20 = E7_2xE7_1/E7_3 (diagonal)", "E7_2xE7_1/E7_3"]
+    },
+    {
+      "c": "13/10",
+      "gap": "1/8",
+      "c_float": 1.3,
+      "gap_float": 0.125,
+      "families": ["w", "prod"],
+      "labels": ["Ising x Potts", "W(E7) p=20 E7_3-extension = Ising x Potts", "Ising x Potts3", "E7_2xE7_1/E7_3 [extension: product of factor invariants #0,0,1 of (E7_2,E7_1,E7_3) [factor invariants class-preserving and center-equivariant]]"]
+    },
+    {
+      "c": "13/10",
+      "gap": "2/15",
+      "c_float": 1.3,
+      "gap_float": 0.13333333333333333,
+      "families": ["gauged"],
+      "labels": ["(Ising x M(5,6))/Z2diag", "(Ising x M(5,6))/Z2_diag"]
+    },
+    {
+      "c": "55/42",
+      "gap": "1/21",
+      "c_float": 1.3095238095238095,
+      "gap_float": 0.047619047619047616,
+      "families": ["n1"],
+      "labels": ["N=1 minimal m=7 A-type: SU(7)_2/S(U(2)xU(5))", "N=1 SM m=7 A-series (bosonized)", "N=1 SM m=7 (A6,A8)", "SU(2)_5xSU(2)_2/SU(2)_7 (N=1 MM m=7)"]
+    },
+    {
+      "c": "4/3",
+      "gap": "1/12",
+      "c_float": 1.3333333333333333,
+      "gap_float": 0.08333333333333333,
+      "families": ["pf_orb"],
+      "labels": ["Z7 parafermion / C: SO(14)_2/U(7)", "Z7 parafermion / C (charge-conjugation orbifold of diagonal)", "Z7 parafermion / charge conjugation (SU(2)_7/O(2))"]
+    },
+    {
+      "c": "4/3",
+      "gap": "2/21",
+      "c_float": 1.3333333333333333,
+      "gap_float": 0.09523809523809523,
+      "families": ["pf"],
+      "labels": ["Z7 parafermion SU(2)_7/U(1)", "Z7 parafermion (diagonal)", "W7 minimal model p=8 = Z7 parafermion"]
+    },
+    {
+      "c": "27/20",
+      "gap": "3/80",
+      "c_float": 1.35,
+      "gap_float": 0.0375,
+      "families": ["n1"],
+      "labels": ["N=1 minimal m=8 A-type: SU(8)_2/S(U(2)xU(6))", "N=1 SM m=8 A-series (bosonized)", "N=1 SM m=8 (A7,A9) Bos[sigma]", "N=1 SM m=8 (A7,A9) Bos[Gsigma]", "SU(2)_6xSU(2)_2/SU(2)_8 (N=1 MM m=8)"]
+    },
+    {
+      "c": "27/20",
+      "gap": "1/10",
+      "c_float": 1.35,
+      "gap_float": 0.1,
+      "families": ["n1", "w", "coset"],
+      "labels": ["N=1 minimal m=8 D-type: SU(6)_2/S(U(3)xU(3))", "su(2)_3 x su(2)_3 / su(2)_6 (diagonal)", "N=1 SM m=8 (A7,D6) ext Bos[sigma]", "N=1 SM m=8 (D5,A9) aut Bos[sigma]", "N=1 SM m=8 (A7,D6) ext Bos[Gsigma]", "N=1 SM m=8 (D5,A9) aut Bos[Gsigma]", "SU(2)_6xSU(2)_2/SU(2)_8 (N=1 MM m=8) [extension: SC J=(0, 0, 1) order 2 h_J=6 X=0]", "SU(2)_6xSU(2)_2/SU(2)_8 (N=1 MM m=8) [automorphism (permutation): SC J=(0, 1, 1) order 2 h_J=13/2 X=1/2]", "SU(2)_3xSU(2)_3/SU(2)_6", "SU(2)_3xSU(2)_3/SU(2)_6 [automorphism (permutation): SC J=(0, 0, 1) order 2 h_J=3/2 X=1/2]"]
+    },
+    {
+      "c": "19/14",
+      "gap": "1/28",
+      "c_float": 1.3571428571428572,
+      "gap_float": 0.03571428571428571,
+      "families": ["prod"],
+      "labels": ["Ising x M(6,7)"]
+    },
+    {
+      "c": "19/14",
+      "gap": "2/21",
+      "c_float": 1.3571428571428572,
+      "gap_float": 0.09523809523809523,
+      "families": ["prod", "gauged"],
+      "labels": ["(Ising x M(6,7))/Z2diag", "Ising x M(6,7)_D", "(Ising x M(6,7))/Z2_diag"]
+    },
+    {
+      "c": "252/185",
+      "gap": "12/185",
+      "c_float": 1.3621621621621622,
+      "gap_float": 0.06486486486486487,
+      "families": ["coset"],
+      "labels": ["Sp(6)_1/SU(2)_35 (principal)"]
+    },
+    {
+      "c": "256/187",
+      "gap": "10/187",
+      "c_float": 1.3689839572192513,
+      "gap_float": 0.053475935828877004,
+      "families": ["w", "coset"],
+      "labels": ["E8_3/SO(16)_3", "W(E8) minimal p=33 (diagonal)", "E8_3xE8_1/E8_4"]
+    },
+    {
+      "c": "256/187",
+      "gap": "16/187",
+      "c_float": 1.3689839572192513,
+      "gap_float": 0.0855614973262032,
+      "families": ["w"],
+      "labels": ["E8_3xE8_1/E8_4 [automorphism (permutation): product of factor invariants #0,0,1 of (E8_3,E8_1,E8_4) [factor invariants class-preserving and center-equivariant]]"]
+    },
+    {
+      "c": "91/66",
+      "gap": "1/33",
+      "c_float": 1.378787878787879,
+      "gap_float": 0.030303030303030304,
+      "families": ["n1"],
+      "labels": ["N=1 minimal m=9 A-type: SU(9)_2/S(U(2)xU(7))", "N=1 SM m=9 A-series (bosonized)", "N=1 SM m=9 (A8,A10)", "SU(2)_7xSU(2)_2/SU(2)_9 (N=1 MM m=9)"]
+    },
+    {
+      "c": "39/28",
+      "gap": "3/112",
+      "c_float": 1.3928571428571428,
+      "gap_float": 0.026785714285714284,
+      "families": ["prod"],
+      "labels": ["Ising x M(7,8)"]
+    },
+    {
+      "c": "39/28",
+      "gap": "1/14",
+      "c_float": 1.3928571428571428,
+      "gap_float": 0.07142857142857142,
+      "families": ["prod", "gauged"],
+      "labels": ["Ising x M(7,8)_D = E6_2/(SU(6)_2 x U(1))", "(Ising x M(7,8))/Z2diag", "Ising x M(7,8)_D", "(Ising x M(7,8))/Z2_diag"]
+    },
+    {
+      "c": "7/5",
+      "gap": "1/40",
+      "c_float": 1.4,
+      "gap_float": 0.025,
+      "families": ["n1"],
+      "labels": ["N=1 minimal m=10 A-type: SU(10)_2/S(U(2)xU(8))", "N=1 SM m=10 (A9,A11) Bos[sigma]", "N=1 SM m=10 (A9,A11) Bos[Gsigma]", "SU(2)_8xSU(2)_2/SU(2)_10 (N=1 MM m=10)"]
+    },
+    {
+      "c": "7/5",
+      "gap": "1/15",
+      "c_float": 1.4,
+      "gap_float": 0.06666666666666667,
+      "families": ["n1", "w", "coset"],
+      "labels": ["N=1 minimal m=10 D-type: SO(5)_3/SO(4)_3", "sp(6)_1 x sp(6)_1 / sp(6)_2 (diagonal)", "N=1 SM m=10 (D6,A11) ext Bos[sigma]", "N=1 SM m=10 (A9,D7) aut Bos[sigma]", "N=1 SM m=10 (D6,A11) ext Bos[Gsigma]", "N=1 SM m=10 (A9,D7) aut Bos[Gsigma]", "SU(2)_8xSU(2)_2/SU(2)_10 (N=1 MM m=10) [automorphism (permutation): SC J=(0, 0, 1) order 2 h_J=21/2 X=1/2]", "SU(2)_8xSU(2)_2/SU(2)_10 (N=1 MM m=10) [extension: SC J=(0, 1, 1) order 2 h_J=10 X=0]", "Sp(6)_1xSp(6)_1/Sp(6)_2", "Sp(6)_1xSp(6)_1/Sp(6)_2 [automorphism (permutation): SC J=(0, 0, 1) order 2 h_J=3/2 X=1/2]"]
+    },
+    {
+      "c": "7/5",
+      "gap": "3/40",
+      "c_float": 1.4,
+      "gap_float": 0.075,
+      "families": ["pf_orb", "prod", "gauged"],
+      "labels": ["Z8 parafermion / C: SO(16)_2/U(8)", "TCI x TCI = E8_2/(SU(8)_2 x SU(2)_2)", "Z8 parafermion / C (charge-conjugation orbifold of diagonal)", "TCI x TCI", "Sym^2(TCI)", "Z8 parafermion / D2 (sigma=+)", "TCI^2/Z2swap", "Z8 parafermion / charge conjugation (SU(2)_8/O(2))"]
+    },
+    {
+      "c": "7/5",
+      "gap": "7/80",
+      "c_float": 1.4,
+      "gap_float": 0.0875,
+      "families": ["pf_orb", "pf", "gauged"],
+      "labels": ["Z8 parafermion SU(2)_8/U(1)", "Z8 parafermion (diagonal)", "Z8 parafermion / Cg (odd-reflection orbifold of diagonal)", "(TCI x TCI)/<s,ab>", "W8 minimal model p=9 = Z8 parafermion"]
+    },
+    {
+      "c": "7/5",
+      "gap": "1/8",
+      "c_float": 1.4,
+      "gap_float": 0.125,
+      "families": ["n1", "pf_orb", "gauged"],
+      "labels": ["(TCI x TCI)/<s,ab> torsion", "Z8 parafermion / D2 (sigma=-)", "Z8 parafermion / D2' (sigma=-)", "N=1 SM m=10 (A9,E6)", "N=1 SM m=10 (A9,E6)' NS-R exchange", "SU(2)_8xSU(2)_2/SU(2)_10 (N=1 MM m=10) [extension: product of factor invariants #0,0,2 of (A1_8,A1_2,A1_10) [factor invariants class-preserving and center-equivariant]]"]
+    },
+    {
+      "c": "7/5",
+      "gap": "3/20",
+      "c_float": 1.4,
+      "gap_float": 0.15,
+      "families": ["n1", "pf_orb", "pf", "w", "gauged"],
+      "labels": ["Z8 parafermion D-type extension (by psi_4)", "(TCI x TCI) Fibonacci-swap", "(TCI x TCI)/Z2diag", "Z8 parafermion / D2' (sigma=+)", "N=1 SM m=10 (D6,E6)", "TCI x TCI partial-swap", "SU(2)_8xSU(2)_2/SU(2)_10 (N=1 MM m=10) [extension: product of factor invariants #1,0,2 of (A1_8,A1_2,A1_10) [factor invariants class-preserving and center-equivariant]]", "W8 minimal model p=9 = Z8 parafermion [extension: SC J=(0, 0, 4) order 2 h_J=2 X=0]", "Sp(6)_1xSp(6)_1/Sp(6)_2 [extension: product of factor invariants #0,0,2 of (C3_1,C3_1,C3_2) [S-invariance verified numerically]]"]
+    },
+    {
+      "c": "405/286",
+      "gap": "3/143",
+      "c_float": 1.416083916083916,
+      "gap_float": 0.02097902097902098,
+      "families": ["n1"],
+      "labels": ["N=1 minimal m=11 A-type: SU(11)_2/S(U(2)xU(9))", "N=1 SM m=11 (A10,A12)"]
+    },
+    {
+      "c": "17/12",
+      "gap": "1/48",
+      "c_float": 1.4166666666666667,
+      "gap_float": 0.020833333333333332,
+      "families": ["prod"],
+      "labels": ["Ising x M(8,9)"]
+    },
+    {
+      "c": "17/12",
+      "gap": "1/18",
+      "c_float": 1.4166666666666667,
+      "gap_float": 0.05555555555555555,
+      "families": ["prod", "gauged"],
+      "labels": ["Ising x M(8,9)_D = G2_2/(SU(2)_6 x U(1))", "(Ising x M(8,9))/Z2diag", "Ising x M(8,9)_D", "(Ising x M(8,9))/Z2_diag"]
+    },
+    {
+      "c": "10/7",
+      "gap": "1/56",
+      "c_float": 1.4285714285714286,
+      "gap_float": 0.017857142857142856,
+      "families": ["n1"],
+      "labels": ["N=1 minimal m=12 A-type: SU(12)_2/S(U(2)xU(10))", "N=1 SM m=12 (A11,A13) Bos[sigma]", "N=1 SM m=12 (A11,A13) Bos[Gsigma]"]
+    },
+    {
+      "c": "10/7",
+      "gap": "1/21",
+      "c_float": 1.4285714285714286,
+      "gap_float": 0.047619047619047616,
+      "families": ["n1"],
+      "labels": ["N=1 minimal m=12 D-type: SO(6)_3/SO(5)_3", "N=1 SM m=12 (A11,D8) ext Bos[sigma]", "N=1 SM m=12 (D7,A13) aut Bos[sigma]", "N=1 SM m=12 (A11,D8) ext Bos[Gsigma]", "N=1 SM m=12 (D7,A13) aut Bos[Gsigma]"]
+    },
+    {
+      "c": "10/7",
+      "gap": "4/63",
+      "c_float": 1.4285714285714286,
+      "gap_float": 0.06349206349206349,
+      "families": ["w"],
+      "labels": ["W3 minimal p=6: SU(4)_3/U(3)", "W3 minimal p=6 (diagonal)", "W3 p=6 / C (charge-conjugation orbifold)", "W3 minimal model p=6"]
+    },
+    {
+      "c": "10/7",
+      "gap": "5/56",
+      "c_float": 1.4285714285714286,
+      "gap_float": 0.08928571428571429,
+      "families": ["n1", "w"],
+      "labels": ["W3 p=6 / S3 = (W3 p=6 Z3-extension)/Z2", "N=1 SM m=12 (E6,A13)"]
+    },
+    {
+      "c": "10/7",
+      "gap": "1/7",
+      "c_float": 1.4285714285714286,
+      "gap_float": 0.14285714285714285,
+      "families": ["n1", "w"],
+      "labels": ["N=1 SM m=12 (E6,D8)", "N=1 SM m=12 (E6,D8)' NS-R exchange", "W3 minimal model p=6 [extension: SC J=(0, 1, 1) order 3 h_J=4 X=0]", "W3 minimal model p=6 [automorphism (permutation): product of factor invariants #0,0,1 of (A2_3,A2_1,A2_4) [S-invariance verified numerically]]"]
+    },
+    {
+      "c": "43/30",
+      "gap": "1/60",
+      "c_float": 1.4333333333333333,
+      "gap_float": 0.016666666666666666,
+      "families": ["prod"],
+      "labels": ["Ising x M(9,10)"]
+    },
+    {
+      "c": "43/30",
+      "gap": "2/45",
+      "c_float": 1.4333333333333333,
+      "gap_float": 0.044444444444444446,
+      "families": ["prod", "gauged"],
+      "labels": ["(Ising x M(9,10))/Z2diag", "Ising x M(9,10)_D", "(Ising x M(9,10))/Z2_diag"]
+    },
+    {
+      "c": "187/130",
+      "gap": "1/65",
+      "c_float": 1.4384615384615385,
+      "gap_float": 0.015384615384615385,
+      "families": ["n1"],
+      "labels": ["N=1 minimal m=13 A-type: SU(13)_2/S(U(2)xU(11))", "N=1 SM m=13 (A12,A14)"]
+    },
+    {
+      "c": "159/110",
+      "gap": "3/220",
+      "c_float": 1.4454545454545455,
+      "gap_float": 0.013636363636363636,
+      "families": ["prod"],
+      "labels": ["Ising x M(10,11)"]
+    },
+    {
+      "c": "159/110",
+      "gap": "2/55",
+      "c_float": 1.4454545454545455,
+      "gap_float": 0.03636363636363636,
+      "families": ["prod", "gauged"],
+      "labels": ["(Ising x M(10,11))/Z2diag", "Ising x M(10,11)_D", "(Ising x M(10,11))/Z2_diag"]
+    },
+    {
+      "c": "81/56",
+      "gap": "3/224",
+      "c_float": 1.4464285714285714,
+      "gap_float": 0.013392857142857142,
+      "families": ["n1"],
+      "labels": ["N=1 minimal m=14 A-type: SU(14)_2/S(U(2)xU(12))", "N=1 SM m=14 (A13,A15) Bos[sigma]", "N=1 SM m=14 (A13,A15) Bos[Gsigma]"]
+    },
+    {
+      "c": "81/56",
+      "gap": "1/28",
+      "c_float": 1.4464285714285714,
+      "gap_float": 0.03571428571428571,
+      "families": ["n1"],
+      "labels": ["N=1 minimal m=14 D-type: SO(7)_3/SO(6)_3", "N=1 SM m=14 (D8,A15) ext Bos[sigma]", "N=1 SM m=14 (A13,D9) aut Bos[sigma]", "N=1 SM m=14 (D8,A15) ext Bos[Gsigma]", "N=1 SM m=14 (A13,D9) aut Bos[Gsigma]"]
+    },
+    {
+      "c": "247/170",
+      "gap": "1/85",
+      "c_float": 1.4529411764705882,
+      "gap_float": 0.011764705882352941,
+      "families": ["n1"],
+      "labels": ["N=1 minimal m=15 A-type: SU(15)_2/S(U(2)xU(13))", "N=1 SM m=15 (A14,A16)"]
+    },
+    {
+      "c": "16/11",
+      "gap": "1/88",
+      "c_float": 1.4545454545454546,
+      "gap_float": 0.011363636363636364,
+      "families": ["prod"],
+      "labels": ["Ising x M(11,12)"]
+    },
+    {
+      "c": "16/11",
+      "gap": "1/33",
+      "c_float": 1.4545454545454546,
+      "gap_float": 0.030303030303030304,
+      "families": ["prod", "gauged"],
+      "labels": ["Ising x M(11,12)_D = F4_2/(Sp(6)_2 x U(1))", "(Ising x M(11,12))/Z2diag", "Ising x M(11,12)_D", "(Ising x M(11,12))/Z2_diag"]
+    },
+    {
+      "c": "16/11",
+      "gap": "5/88",
+      "c_float": 1.4545454545454546,
+      "gap_float": 0.056818181818181816,
+      "families": ["prod"],
+      "labels": ["Ising x M(11,12)_E6"]
+    },
+    {
+      "c": "16/11",
+      "gap": "8/99",
+      "c_float": 1.4545454545454546,
+      "gap_float": 0.08080808080808081,
+      "families": ["pf_orb", "pf"],
+      "labels": ["Z9 parafermion SU(2)_9/U(1)", "Z9 parafermion / C: SO(18)_2/U(9)", "Z9 parafermion (diagonal)", "Z9 parafermion / C (charge-conjugation orbifold of diagonal)", "W9 minimal model p=10 = Z9 parafermion", "Z9 parafermion / charge conjugation (SU(2)_9/O(2))"]
+    },
+    {
+      "c": "16/11",
+      "gap": "1/11",
+      "c_float": 1.4545454545454546,
+      "gap_float": 0.09090909090909091,
+      "families": ["pf_orb", "gauged"],
+      "labels": ["Z9 parafermion / D3 (C-orbifold of the Z3 extension)", "(Ising x M(11,12)_E6) eps-glued", "(Ising x M(11,12)_E6)/Z2_diag", "(Ising x M(11,12)_E6)/Z2diag"]
+    },
+    {
+      "c": "16/11",
+      "gap": "2/11",
+      "c_float": 1.4545454545454546,
+      "gap_float": 0.18181818181818182,
+      "families": ["pf", "gauged"],
+      "labels": ["Z9 parafermion Z3 extension (by psi_3, psi_6)", "(Ising x M(11,12)_E6) Ising-glued", "Ising x M(11,12)_E6 exotic", "W9 minimal model p=10 = Z9 parafermion [extension: SC J=(0, 3, 6) order 3 h_J=2 X=0]"]
+    },
+    {
+      "c": "35/24",
+      "gap": "1/96",
+      "c_float": 1.4583333333333333,
+      "gap_float": 0.010416666666666666,
+      "families": ["n1"],
+      "labels": ["N=1 minimal m=16 A-type: SU(16)_2/S(U(2)xU(14))", "N=1 SM m=16 (A15,A17) Bos[sigma]", "N=1 SM m=16 (A15,A17) Bos[Gsigma]"]
+    },
+    {
+      "c": "35/24",
+      "gap": "1/36",
+      "c_float": 1.4583333333333333,
+      "gap_float": 0.027777777777777776,
+      "families": ["n1"],
+      "labels": ["N=1 minimal m=16 D-type: SO(8)_3/SO(7)_3", "N=1 SM m=16 (A15,D10) ext Bos[sigma]", "N=1 SM m=16 (D9,A17) aut Bos[sigma]", "N=1 SM m=16 (A15,D10) ext Bos[Gsigma]", "N=1 SM m=16 (D9,A17) aut Bos[Gsigma]"]
+    },
+    {
+      "c": "35/24",
+      "gap": "1/12",
+      "c_float": 1.4583333333333333,
+      "gap_float": 0.08333333333333333,
+      "families": ["n1"],
+      "labels": ["N=1 SM m=16 (A15,E7) Bos[sigma]", "N=1 SM m=16 (A15,E7) Bos[Gsigma]"]
+    },
+    {
+      "c": "19/13",
+      "gap": "1/104",
+      "c_float": 1.4615384615384615,
+      "gap_float": 0.009615384615384616,
+      "families": ["prod"],
+      "labels": ["Ising x M(12,13)"]
+    },
+    {
+      "c": "19/13",
+      "gap": "1/39",
+      "c_float": 1.4615384615384615,
+      "gap_float": 0.02564102564102564,
+      "families": ["prod", "gauged"],
+      "labels": ["(Ising x M(12,13))/Z2diag", "Ising x M(12,13)_D", "(Ising x M(12,13))/Z2_diag"]
+    },
+    {
+      "c": "19/13",
+      "gap": "5/104",
+      "c_float": 1.4615384615384615,
+      "gap_float": 0.04807692307692308,
+      "families": ["prod"],
+      "labels": ["Ising x M(12,13)_E6"]
+    },
+    {
+      "c": "19/13",
+      "gap": "1/13",
+      "c_float": 1.4615384615384615,
+      "gap_float": 0.07692307692307693,
+      "families": ["gauged"],
+      "labels": ["(Ising x M(12,13)_E6) eps-glued", "(Ising x M(12,13)_E6)/Z2_diag", "(Ising x M(12,13)_E6)/Z2diag"]
+    },
+    {
+      "c": "19/13",
+      "gap": "2/13",
+      "c_float": 1.4615384615384615,
+      "gap_float": 0.15384615384615385,
+      "families": ["gauged"],
+      "labels": ["(Ising x M(12,13)_E6) auto-twisted", "Ising x M(12,13)_E6 exotic (Ising swap)", "Ising x M(12,13)_E6 exotic"]
+    },
+    {
+      "c": "945/646",
+      "gap": "3/323",
+      "c_float": 1.4628482972136223,
+      "gap_float": 0.009287925696594427,
+      "families": ["n1"],
+      "labels": ["N=1 minimal m=17 A-type: SU(17)_2/S(U(2)xU(15))", "N=1 SM m=17 (A16,A18)"]
+    },
+    {
+      "c": "22/15",
+      "gap": "1/120",
+      "c_float": 1.4666666666666666,
+      "gap_float": 0.008333333333333333,
+      "families": ["n1"],
+      "labels": ["N=1 minimal m=18 A-type: SU(18)_2/S(U(2)xU(16))", "N=1 SM m=18 (A17,A19) Bos[sigma]", "N=1 SM m=18 (A17,A19) Bos[Gsigma]"]
+    },
+    {
+      "c": "22/15",
+      "gap": "1/45",
+      "c_float": 1.4666666666666666,
+      "gap_float": 0.022222222222222223,
+      "families": ["n1"],
+      "labels": ["N=1 minimal m=18 D-type: SO(9)_3/SO(8)_3", "N=1 SM m=18 (D10,A19) ext Bos[sigma]", "N=1 SM m=18 (A17,D11) aut Bos[sigma]", "N=1 SM m=18 (D10,A19) ext Bos[Gsigma]", "N=1 SM m=18 (A17,D11) aut Bos[Gsigma]"]
+    },
+    {
+      "c": "22/15",
+      "gap": "1/15",
+      "c_float": 1.4666666666666666,
+      "gap_float": 0.06666666666666667,
+      "families": ["n1"],
+      "labels": ["N=1 SM m=18 (E7,A19) Bos[sigma]", "N=1 SM m=18 (E7,A19) Bos[Gsigma]"]
+    },
+    {
+      "c": "22/15",
+      "gap": "22/315",
+      "c_float": 1.4666666666666666,
+      "gap_float": 0.06984126984126984,
+      "families": ["w", "coset"],
+      "labels": ["G2_2xG2_1/G2_3 (diagonal)", "G2_2xG2_1/G2_3"]
+    },
+    {
+      "c": "22/15",
+      "gap": "1/12",
+      "c_float": 1.4666666666666666,
+      "gap_float": 0.08333333333333333,
+      "families": ["w", "coset"],
+      "labels": ["SU(7)_2/S(U(3)xU(4)) = SU(2)_3xSU(2)_4/SU(2)_7", "su(2)_3 x su(2)_4 / su(2)_7 (diagonal)", "SU(2)_3xSU(2)_4/SU(2)_7 (diagonal)", "SU(2)_3xSU(2)_4/SU(2)_7"]
+    },
+    {
+      "c": "22/15",
+      "gap": "2/15",
+      "c_float": 1.4666666666666666,
+      "gap_float": 0.13333333333333333,
+      "families": ["w", "coset"],
+      "labels": ["G2_2/SU(3)_2", "G2_2/SU(3)_2 = SU(2)_3xSU(3)_1/SU(2)_7 = (G2_2xG2_1/G2_3)_E6", "SU(2)_3xSU(2)_4/SU(2)_7 [extension: SC J=(0, 1, 0) order 2 h_J=3 X=0]", "G2_2xG2_1/G2_3 [extension: product of factor invariants #0,0,1 of (G2_1,G2_2,G2_3) [S-invariance verified numerically]]"]
+    },
+    {
+      "c": "267/182",
+      "gap": "3/364",
+      "c_float": 1.467032967032967,
+      "gap_float": 0.008241758241758242,
+      "families": ["prod"],
+      "labels": ["Ising x M(13,14)"]
+    },
+    {
+      "c": "267/182",
+      "gap": "2/91",
+      "c_float": 1.467032967032967,
+      "gap_float": 0.02197802197802198,
+      "families": ["prod", "gauged"],
+      "labels": ["(Ising x M(13,14))/Z2diag", "Ising x M(13,14)_D", "(Ising x M(13,14))/Z2_diag"]
+    },
+    {
+      "c": "391/266",
+      "gap": "1/133",
+      "c_float": 1.4699248120300752,
+      "gap_float": 0.007518796992481203,
+      "families": ["n1"],
+      "labels": ["N=1 minimal m=19 A-type: SU(19)_2/S(U(2)xU(17))", "N=1 SM m=19 (A18,A20)"]
+    },
+    {
+      "c": "103/70",
+      "gap": "1/140",
+      "c_float": 1.4714285714285715,
+      "gap_float": 0.007142857142857143,
+      "families": ["prod"],
+      "labels": ["Ising x M(14,15)"]
+    },
+    {
+      "c": "103/70",
+      "gap": "2/105",
+      "c_float": 1.4714285714285715,
+      "gap_float": 0.01904761904761905,
+      "families": ["prod", "gauged"],
+      "labels": ["(Ising x M(14,15))/Z2diag", "Ising x M(14,15)_D", "(Ising x M(14,15))/Z2_diag"]
+    },
+    {
+      "c": "81/55",
+      "gap": "3/440",
+      "c_float": 1.4727272727272727,
+      "gap_float": 0.006818181818181818,
+      "families": ["n1"],
+      "labels": ["N=1 minimal m=20 A-type: SU(20)_2/S(U(2)xU(18))", "N=1 SM m=20 (A19,A21) Bos[sigma]", "N=1 SM m=20 (A19,A21) Bos[Gsigma]"]
+    },
+    {
+      "c": "81/55",
+      "gap": "1/55",
+      "c_float": 1.4727272727272727,
+      "gap_float": 0.01818181818181818,
+      "families": ["n1"],
+      "labels": ["N=1 minimal m=20 D-type: SO(10)_3/SO(9)_3", "N=1 SM m=20 (A19,D12) ext Bos[sigma]", "N=1 SM m=20 (D11,A21) aut Bos[sigma]", "N=1 SM m=20 (A19,D12) ext Bos[Gsigma]", "N=1 SM m=20 (D11,A21) aut Bos[Gsigma]"]
+    },
+    {
+      "c": "59/40",
+      "gap": "1/160",
+      "c_float": 1.475,
+      "gap_float": 0.00625,
+      "families": ["prod"],
+      "labels": ["Ising x M(15,16)"]
+    },
+    {
+      "c": "59/40",
+      "gap": "1/60",
+      "c_float": 1.475,
+      "gap_float": 0.016666666666666666,
+      "families": ["prod", "gauged"],
+      "labels": ["(Ising x M(15,16))/Z2diag", "Ising x M(15,16)_D", "(Ising x M(15,16))/Z2_diag"]
+    },
+    {
+      "c": "475/322",
+      "gap": "1/161",
+      "c_float": 1.4751552795031055,
+      "gap_float": 0.006211180124223602,
+      "families": ["n1"],
+      "labels": ["N=1 minimal m=21 A-type: SU(21)_2/S(U(2)xU(19))", "N=1 SM m=21 (A20,A22)"]
+    },
+    {
+      "c": "65/44",
+      "gap": "1/176",
+      "c_float": 1.4772727272727273,
+      "gap_float": 0.005681818181818182,
+      "families": ["n1"],
+      "labels": ["N=1 minimal m=22 A-type: SU(22)_2/S(U(2)xU(20))", "N=1 SM m=22 (A21,A23) Bos[sigma]", "N=1 SM m=22 (A21,A23) Bos[Gsigma]"]
+    },
+    {
+      "c": "65/44",
+      "gap": "1/66",
+      "c_float": 1.4772727272727273,
+      "gap_float": 0.015151515151515152,
+      "families": ["n1"],
+      "labels": ["N=1 minimal m=22 D-type: SO(11)_3/SO(10)_3", "N=1 SM m=22 (D12,A23) ext Bos[sigma]", "N=1 SM m=22 (A21,D13) aut Bos[sigma]", "N=1 SM m=22 (D12,A23) ext Bos[Gsigma]", "N=1 SM m=22 (A21,D13) aut Bos[Gsigma]"]
+    },
+    {
+      "c": "201/136",
+      "gap": "3/544",
+      "c_float": 1.4779411764705883,
+      "gap_float": 0.0055147058823529415,
+      "families": ["prod"],
+      "labels": ["Ising x M(16,17)"]
+    },
+    {
+      "c": "201/136",
+      "gap": "1/68",
+      "c_float": 1.4779411764705883,
+      "gap_float": 0.014705882352941176,
+      "families": ["prod", "gauged"],
+      "labels": ["(Ising x M(16,17))/Z2diag", "Ising x M(16,17)_D", "(Ising x M(16,17))/Z2_diag"]
+    },
+    {
+      "c": "1701/1150",
+      "gap": "3/575",
+      "c_float": 1.4791304347826086,
+      "gap_float": 0.0052173913043478265,
+      "families": ["n1"],
+      "labels": ["N=1 minimal m=23 A-type: SU(23)_2/S(U(2)xU(21))", "N=1 SM m=23 (A22,A24)"]
+    },
+    {
+      "c": "151/102",
+      "gap": "1/204",
+      "c_float": 1.4803921568627452,
+      "gap_float": 0.004901960784313725,
+      "families": ["prod"],
+      "labels": ["Ising x M(17,18)"]
+    },
+    {
+      "c": "151/102",
+      "gap": "2/153",
+      "c_float": 1.4803921568627452,
+      "gap_float": 0.013071895424836602,
+      "families": ["prod", "gauged"],
+      "labels": ["(Ising x M(17,18))/Z2diag", "Ising x M(17,18)_D", "(Ising x M(17,18))/Z2_diag"]
+    },
+    {
+      "c": "151/102",
+      "gap": "2/51",
+      "c_float": 1.4803921568627452,
+      "gap_float": 0.0392156862745098,
+      "families": ["prod"],
+      "labels": ["Ising x M(17,18)_E7"]
+    },
+    {
+      "c": "77/52",
+      "gap": "1/208",
+      "c_float": 1.4807692307692308,
+      "gap_float": 0.004807692307692308,
+      "families": ["n1"],
+      "labels": ["N=1 minimal m=24 A-type: SU(24)_2/S(U(2)xU(22))", "N=1 SM m=24 (A23,A25) Bos[sigma]", "N=1 SM m=24 (A23,A25) Bos[Gsigma]"]
+    },
+    {
+      "c": "77/52",
+      "gap": "1/78",
+      "c_float": 1.4807692307692308,
+      "gap_float": 0.01282051282051282,
+      "families": ["n1"],
+      "labels": ["N=1 minimal m=24 D-type: SO(12)_3/SO(11)_3", "N=1 SM m=24 (A23,D14) ext Bos[sigma]", "N=1 SM m=24 (D13,A25) aut Bos[sigma]", "N=1 SM m=24 (A23,D14) ext Bos[Gsigma]", "N=1 SM m=24 (D13,A25) aut Bos[Gsigma]"]
+    },
+    {
+      "c": "667/450",
+      "gap": "1/225",
+      "c_float": 1.4822222222222223,
+      "gap_float": 0.0044444444444444444,
+      "families": ["n1"],
+      "labels": ["N=1 SM m=25 (A24,A26)"]
+    },
+    {
+      "c": "169/114",
+      "gap": "1/228",
+      "c_float": 1.4824561403508771,
+      "gap_float": 0.0043859649122807015,
+      "families": ["prod"],
+      "labels": ["Ising x M(18,19)"]
+    },
+    {
+      "c": "169/114",
+      "gap": "2/171",
+      "c_float": 1.4824561403508771,
+      "gap_float": 0.011695906432748537,
+      "families": ["prod", "gauged"],
+      "labels": ["(Ising x M(18,19))/Z2diag", "Ising x M(18,19)_D", "(Ising x M(18,19))/Z2_diag"]
+    },
+    {
+      "c": "169/114",
+      "gap": "2/57",
+      "c_float": 1.4824561403508771,
+      "gap_float": 0.03508771929824561,
+      "families": ["prod"],
+      "labels": ["Ising x M(18,19)_E7"]
+    },
+    {
+      "c": "135/91",
+      "gap": "3/728",
+      "c_float": 1.4835164835164836,
+      "gap_float": 0.004120879120879121,
+      "families": ["n1"],
+      "labels": ["N=1 SM m=26 (A25,A27) Bos[sigma]", "N=1 SM m=26 (A25,A27) Bos[Gsigma]"]
+    },
+    {
+      "c": "135/91",
+      "gap": "1/91",
+      "c_float": 1.4835164835164836,
+      "gap_float": 0.01098901098901099,
+      "families": ["n1"],
+      "labels": ["N=1 SM m=26 (D14,A27) ext Bos[sigma]", "N=1 SM m=26 (A25,D15) aut Bos[sigma]", "N=1 SM m=26 (D14,A27) ext Bos[Gsigma]", "N=1 SM m=26 (A25,D15) aut Bos[Gsigma]"]
+    },
+    {
+      "c": "141/95",
+      "gap": "3/760",
+      "c_float": 1.4842105263157894,
+      "gap_float": 0.003947368421052632,
+      "families": ["prod"],
+      "labels": ["Ising x M(19,20)"]
+    },
+    {
+      "c": "141/95",
+      "gap": "1/95",
+      "c_float": 1.4842105263157894,
+      "gap_float": 0.010526315789473684,
+      "families": ["prod", "gauged"],
+      "labels": ["(Ising x M(19,20))/Z2diag", "Ising x M(19,20)_D", "(Ising x M(19,20))/Z2_diag"]
+    },
+    {
+      "c": "775/522",
+      "gap": "1/261",
+      "c_float": 1.4846743295019158,
+      "gap_float": 0.0038314176245210726,
+      "families": ["n1"],
+      "labels": ["N=1 SM m=27 (A26,A28)"]
+    },
+    {
+      "c": "52/35",
+      "gap": "1/280",
+      "c_float": 1.4857142857142858,
+      "gap_float": 0.0035714285714285713,
+      "families": ["n1", "prod"],
+      "labels": ["Ising x M(20,21)", "N=1 SM m=28 (A27,A29) Bos[sigma]", "N=1 SM m=28 (A27,A29) Bos[Gsigma]"]
+    },
+    {
+      "c": "52/35",
+      "gap": "1/105",
+      "c_float": 1.4857142857142858,
+      "gap_float": 0.009523809523809525,
+      "families": ["n1", "prod", "gauged"],
+      "labels": ["(Ising x M(20,21))/Z2diag", "Ising x M(20,21)_D", "N=1 SM m=28 (A27,D16) ext Bos[sigma]", "N=1 SM m=28 (D15,A29) aut Bos[sigma]", "N=1 SM m=28 (A27,D16) ext Bos[Gsigma]", "N=1 SM m=28 (D15,A29) aut Bos[Gsigma]", "(Ising x M(20,21))/Z2_diag"]
+    },
+    {
+      "c": "52/35",
+      "gap": "2/35",
+      "c_float": 1.4857142857142858,
+      "gap_float": 0.05714285714285714,
+      "families": ["n1"],
+      "labels": ["N=1 SM m=28 (A27,E8)"]
+    },
+    {
+      "c": "2673/1798",
+      "gap": "3/899",
+      "c_float": 1.4866518353726363,
+      "gap_float": 0.0033370411568409346,
+      "families": ["n1"],
+      "labels": ["N=1 SM m=29 (A28,A30)"]
+    },
+    {
+      "c": "229/154",
+      "gap": "1/308",
+      "c_float": 1.4870129870129871,
+      "gap_float": 0.003246753246753247,
+      "families": ["prod"],
+      "labels": ["Ising x M(21,22)"]
+    },
+    {
+      "c": "229/154",
+      "gap": "2/231",
+      "c_float": 1.4870129870129871,
+      "gap_float": 0.008658008658008658,
+      "families": ["prod", "gauged"],
+      "labels": ["(Ising x M(21,22))/Z2diag", "Ising x M(21,22)_D", "(Ising x M(21,22))/Z2_diag"]
+    },
+    {
+      "c": "119/80",
+      "gap": "1/320",
+      "c_float": 1.4875,
+      "gap_float": 0.003125,
+      "families": ["n1"],
+      "labels": ["N=1 SM m=30 (A29,A31) Bos[sigma]", "N=1 SM m=30 (A29,A31) Bos[Gsigma]"]
+    },
+    {
+      "c": "119/80",
+      "gap": "1/120",
+      "c_float": 1.4875,
+      "gap_float": 0.008333333333333333,
+      "families": ["n1"],
+      "labels": ["N=1 SM m=30 (D16,A31) ext Bos[sigma]", "N=1 SM m=30 (A29,D17) aut Bos[sigma]", "N=1 SM m=30 (D16,A31) ext Bos[Gsigma]", "N=1 SM m=30 (A29,D17) aut Bos[Gsigma]"]
+    },
+    {
+      "c": "119/80",
+      "gap": "1/20",
+      "c_float": 1.4875,
+      "gap_float": 0.05,
+      "families": ["n1"],
+      "labels": ["N=1 SM m=30 (E8,A31)"]
+    },
+    {
+      "c": "753/506",
+      "gap": "3/1012",
+      "c_float": 1.4881422924901186,
+      "gap_float": 0.0029644268774703555,
+      "families": ["prod"],
+      "labels": ["Ising x M(22,23)"]
+    },
+    {
+      "c": "753/506",
+      "gap": "2/253",
+      "c_float": 1.4881422924901186,
+      "gap_float": 0.007905138339920948,
+      "families": ["prod", "gauged"],
+      "labels": ["(Ising x M(22,23))/Z2diag", "Ising x M(22,23)_D", "(Ising x M(22,23))/Z2_diag"]
+    },
+    {
+      "c": "137/92",
+      "gap": "1/368",
+      "c_float": 1.4891304347826086,
+      "gap_float": 0.002717391304347826,
+      "families": ["prod"],
+      "labels": ["Ising x M(23,24)"]
+    },
+    {
+      "c": "137/92",
+      "gap": "1/138",
+      "c_float": 1.4891304347826086,
+      "gap_float": 0.007246376811594203,
+      "families": ["prod", "gauged"],
+      "labels": ["(Ising x M(23,24))/Z2diag", "Ising x M(23,24)_D", "(Ising x M(23,24))/Z2_diag"]
+    },
+    {
+      "c": "149/100",
+      "gap": "1/400",
+      "c_float": 1.49,
+      "gap_float": 0.0025,
+      "families": ["prod"],
+      "labels": ["Ising x M(24,25)"]
+    },
+    {
+      "c": "149/100",
+      "gap": "1/150",
+      "c_float": 1.49,
+      "gap_float": 0.006666666666666667,
+      "families": ["prod", "gauged"],
+      "labels": ["(Ising x M(24,25))/Z2diag", "Ising x M(24,25)_D", "(Ising x M(24,25))/Z2_diag"]
+    },
+    {
+      "c": "969/650",
+      "gap": "3/1300",
+      "c_float": 1.4907692307692308,
+      "gap_float": 0.002307692307692308,
+      "families": ["prod"],
+      "labels": ["Ising x M(25,26)"]
+    },
+    {
+      "c": "969/650",
+      "gap": "2/325",
+      "c_float": 1.4907692307692308,
+      "gap_float": 0.006153846153846154,
+      "families": ["prod", "gauged"],
+      "labels": ["(Ising x M(25,26))/Z2diag", "Ising x M(25,26)_D", "(Ising x M(25,26))/Z2_diag"]
+    },
+    {
+      "c": "349/234",
+      "gap": "1/468",
+      "c_float": 1.4914529914529915,
+      "gap_float": 0.002136752136752137,
+      "families": ["prod"],
+      "labels": ["Ising x M(26,27)"]
+    },
+    {
+      "c": "349/234",
+      "gap": "2/351",
+      "c_float": 1.4914529914529915,
+      "gap_float": 0.005698005698005698,
+      "families": ["prod", "gauged"],
+      "labels": ["(Ising x M(26,27))/Z2diag", "Ising x M(26,27)_D", "(Ising x M(26,27))/Z2_diag"]
+    },
+    {
+      "c": "94/63",
+      "gap": "1/504",
+      "c_float": 1.492063492063492,
+      "gap_float": 0.001984126984126984,
+      "families": ["prod"],
+      "labels": ["Ising x M(27,28)"]
+    },
+    {
+      "c": "94/63",
+      "gap": "1/189",
+      "c_float": 1.492063492063492,
+      "gap_float": 0.005291005291005291,
+      "families": ["prod", "gauged"],
+      "labels": ["(Ising x M(27,28))/Z2diag", "Ising x M(27,28)_D", "(Ising x M(27,28))/Z2_diag"]
+    },
+    {
+      "c": "303/203",
+      "gap": "3/1624",
+      "c_float": 1.4926108374384237,
+      "gap_float": 0.0018472906403940886,
+      "families": ["prod"],
+      "labels": ["Ising x M(28,29)"]
+    },
+    {
+      "c": "303/203",
+      "gap": "1/203",
+      "c_float": 1.4926108374384237,
+      "gap_float": 0.0049261083743842365,
+      "families": ["prod", "gauged"],
+      "labels": ["(Ising x M(28,29))/Z2diag", "Ising x M(28,29)_D", "(Ising x M(28,29))/Z2_diag"]
+    },
+    {
+      "c": "433/290",
+      "gap": "1/580",
+      "c_float": 1.493103448275862,
+      "gap_float": 0.0017241379310344827,
+      "families": ["prod"],
+      "labels": ["Ising x M(29,30)"]
+    },
+    {
+      "c": "433/290",
+      "gap": "2/435",
+      "c_float": 1.493103448275862,
+      "gap_float": 0.004597701149425287,
+      "families": ["prod", "gauged"],
+      "labels": ["(Ising x M(29,30))/Z2diag", "Ising x M(29,30)_D", "(Ising x M(29,30))/Z2_diag"]
+    },
+    {
+      "c": "433/290",
+      "gap": "4/145",
+      "c_float": 1.493103448275862,
+      "gap_float": 0.027586206896551724,
+      "families": ["prod"],
+      "labels": ["Ising x M(29,30)_E8"]
+    },
+    {
+      "c": "463/310",
+      "gap": "1/620",
+      "c_float": 1.4935483870967743,
+      "gap_float": 0.0016129032258064516,
+      "families": ["prod"],
+      "labels": ["Ising x M(30,31)"]
+    },
+    {
+      "c": "463/310",
+      "gap": "2/465",
+      "c_float": 1.4935483870967743,
+      "gap_float": 0.004301075268817204,
+      "families": ["prod", "gauged"],
+      "labels": ["(Ising x M(30,31))/Z2diag", "Ising x M(30,31)_D", "(Ising x M(30,31))/Z2_diag"]
+    },
+    {
+      "c": "463/310",
+      "gap": "4/155",
+      "c_float": 1.4935483870967743,
+      "gap_float": 0.025806451612903226,
+      "families": ["prod"],
+      "labels": ["Ising x M(30,31)_E8"]
+    },
+    {
+      "c": "741/496",
+      "gap": "3/1984",
+      "c_float": 1.4939516129032258,
+      "gap_float": 0.0015120967741935483,
+      "families": ["prod"],
+      "labels": ["Ising x M(31,32)"]
+    },
+    {
+      "c": "741/496",
+      "gap": "1/248",
+      "c_float": 1.4939516129032258,
+      "gap_float": 0.004032258064516129,
+      "families": ["prod", "gauged"],
+      "labels": ["Ising x M(31,32)_D", "(Ising x M(31,32))/Z2diag"]
+    },
+    {
+      "c": "263/176",
+      "gap": "1/704",
+      "c_float": 1.4943181818181819,
+      "gap_float": 0.0014204545454545455,
+      "families": ["prod"],
+      "labels": ["Ising x M(32,33)"]
+    },
+    {
+      "c": "263/176",
+      "gap": "1/264",
+      "c_float": 1.4943181818181819,
+      "gap_float": 0.003787878787878788,
+      "families": ["prod", "gauged"],
+      "labels": ["Ising x M(32,33)_D", "(Ising x M(32,33))/Z2diag"]
+    },
+    {
+      "c": "559/374",
+      "gap": "1/748",
+      "c_float": 1.4946524064171123,
+      "gap_float": 0.001336898395721925,
+      "families": ["prod"],
+      "labels": ["Ising x M(33,34)"]
+    },
+    {
+      "c": "559/374",
+      "gap": "2/561",
+      "c_float": 1.4946524064171123,
+      "gap_float": 0.0035650623885918,
+      "families": ["prod", "gauged"],
+      "labels": ["Ising x M(33,34)_D", "(Ising x M(33,34))/Z2diag"]
+    },
+    {
+      "c": "1779/1190",
+      "gap": "3/2380",
+      "c_float": 1.4949579831932773,
+      "gap_float": 0.0012605042016806723,
+      "families": ["prod"],
+      "labels": ["Ising x M(34,35)"]
+    },
+    {
+      "c": "1779/1190",
+      "gap": "2/595",
+      "c_float": 1.4949579831932773,
+      "gap_float": 0.0033613445378151263,
+      "families": ["prod", "gauged"],
+      "labels": ["Ising x M(34,35)_D", "(Ising x M(34,35))/Z2diag"]
+    },
+    {
+      "c": "157/105",
+      "gap": "1/840",
+      "c_float": 1.4952380952380953,
+      "gap_float": 0.0011904761904761906,
+      "families": ["prod"],
+      "labels": ["Ising x M(35,36)"]
+    },
+    {
+      "c": "157/105",
+      "gap": "1/315",
+      "c_float": 1.4952380952380953,
+      "gap_float": 0.0031746031746031746,
+      "families": ["prod", "gauged"],
+      "labels": ["Ising x M(35,36)_D", "(Ising x M(35,36))/Z2diag"]
+    },
+    {
+      "c": "166/111",
+      "gap": "1/888",
+      "c_float": 1.4954954954954955,
+      "gap_float": 0.0011261261261261261,
+      "families": ["prod"],
+      "labels": ["Ising x M(36,37)"]
+    },
+    {
+      "c": "166/111",
+      "gap": "1/333",
+      "c_float": 1.4954954954954955,
+      "gap_float": 0.003003003003003003,
+      "families": ["prod", "gauged"],
+      "labels": ["Ising x M(36,37)_D", "(Ising x M(36,37))/Z2diag"]
+    },
+    {
+      "c": "2103/1406",
+      "gap": "3/2812",
+      "c_float": 1.495732574679943,
+      "gap_float": 0.0010668563300142249,
+      "families": ["prod"],
+      "labels": ["Ising x M(37,38)"]
+    },
+    {
+      "c": "2103/1406",
+      "gap": "2/703",
+      "c_float": 1.495732574679943,
+      "gap_float": 0.002844950213371266,
+      "families": ["prod", "gauged"],
+      "labels": ["Ising x M(37,38)_D", "(Ising x M(37,38))/Z2diag"]
+    },
+    {
+      "c": "739/494",
+      "gap": "1/988",
+      "c_float": 1.4959514170040487,
+      "gap_float": 0.0010121457489878543,
+      "families": ["prod"],
+      "labels": ["Ising x M(38,39)"]
+    },
+    {
+      "c": "739/494",
+      "gap": "2/741",
+      "c_float": 1.4959514170040487,
+      "gap_float": 0.002699055330634278,
+      "families": ["prod", "gauged"],
+      "labels": ["Ising x M(38,39)_D", "(Ising x M(38,39))/Z2diag"]
+    },
+    {
+      "c": "389/260",
+      "gap": "1/1040",
+      "c_float": 1.4961538461538462,
+      "gap_float": 0.0009615384615384616,
+      "families": ["prod"],
+      "labels": ["Ising x M(39,40)"]
+    },
+    {
+      "c": "389/260",
+      "gap": "1/390",
+      "c_float": 1.4961538461538462,
+      "gap_float": 0.002564102564102564,
+      "families": ["prod", "gauged"],
+      "labels": ["Ising x M(39,40)_D", "(Ising x M(39,40))/Z2diag"]
+    },
+    {
+      "c": "1227/820",
+      "gap": "3/3280",
+      "c_float": 1.4963414634146341,
+      "gap_float": 0.0009146341463414635,
+      "families": ["prod"],
+      "labels": ["Ising x M(40,41)"]
+    },
+    {
+      "c": "1227/820",
+      "gap": "1/410",
+      "c_float": 1.4963414634146341,
+      "gap_float": 0.0024390243902439024,
+      "families": ["prod", "gauged"],
+      "labels": ["Ising x M(40,41)_D", "(Ising x M(40,41))/Z2diag"]
+    },
+    {
+      "c": "859/574",
+      "gap": "1/1148",
+      "c_float": 1.4965156794425087,
+      "gap_float": 0.0008710801393728223,
+      "families": ["prod"],
+      "labels": ["Ising x M(41,42)"]
+    },
+    {
+      "c": "859/574",
+      "gap": "2/861",
+      "c_float": 1.4965156794425087,
+      "gap_float": 0.0023228803716608595,
+      "families": ["prod", "gauged"],
+      "labels": ["Ising x M(41,42)_D", "(Ising x M(41,42))/Z2diag"]
+    },
+    {
+      "c": "901/602",
+      "gap": "1/1204",
+      "c_float": 1.4966777408637875,
+      "gap_float": 0.0008305647840531562,
+      "families": ["prod"],
+      "labels": ["Ising x M(42,43)"]
+    },
+    {
+      "c": "901/602",
+      "gap": "2/903",
+      "c_float": 1.4966777408637875,
+      "gap_float": 0.0022148394241417496,
+      "families": ["prod", "gauged"],
+      "labels": ["Ising x M(42,43)_D", "(Ising x M(42,43))/Z2diag"]
+    },
+    {
+      "c": "708/473",
+      "gap": "3/3784",
+      "c_float": 1.4968287526427062,
+      "gap_float": 0.0007928118393234672,
+      "families": ["prod"],
+      "labels": ["Ising x M(43,44)"]
+    },
+    {
+      "c": "708/473",
+      "gap": "1/473",
+      "c_float": 1.4968287526427062,
+      "gap_float": 0.0021141649048625794,
+      "families": ["prod", "gauged"],
+      "labels": ["Ising x M(43,44)_D", "(Ising x M(43,44))/Z2diag"]
+    },
+    {
+      "c": "247/165",
+      "gap": "1/1320",
+      "c_float": 1.496969696969697,
+      "gap_float": 0.0007575757575757576,
+      "families": ["prod"],
+      "labels": ["Ising x M(44,45)"]
+    },
+    {
+      "c": "247/165",
+      "gap": "1/495",
+      "c_float": 1.496969696969697,
+      "gap_float": 0.00202020202020202,
+      "families": ["prod", "gauged"],
+      "labels": ["Ising x M(44,45)_D", "(Ising x M(44,45))/Z2diag"]
+    },
+    {
+      "c": "1033/690",
+      "gap": "1/1380",
+      "c_float": 1.4971014492753623,
+      "gap_float": 0.0007246376811594203,
+      "families": ["prod"],
+      "labels": ["Ising x M(45,46)"]
+    },
+    {
+      "c": "1033/690",
+      "gap": "2/1035",
+      "c_float": 1.4971014492753623,
+      "gap_float": 0.001932367149758454,
+      "families": ["prod", "gauged"],
+      "labels": ["Ising x M(45,46)_D", "(Ising x M(45,46))/Z2diag"]
+    },
+    {
+      "c": "3237/2162",
+      "gap": "3/4324",
+      "c_float": 1.4972247918593895,
+      "gap_float": 0.0006938020351526364,
+      "families": ["prod"],
+      "labels": ["Ising x M(46,47)"]
+    },
+    {
+      "c": "3237/2162",
+      "gap": "2/1081",
+      "c_float": 1.4972247918593895,
+      "gap_float": 0.0018501387604070306,
+      "families": ["prod", "gauged"],
+      "labels": ["Ising x M(46,47)_D", "(Ising x M(46,47))/Z2diag"]
+    },
+    {
+      "c": "563/376",
+      "gap": "1/1504",
+      "c_float": 1.497340425531915,
+      "gap_float": 0.0006648936170212766,
+      "families": ["prod"],
+      "labels": ["Ising x M(47,48)"]
+    },
+    {
+      "c": "563/376",
+      "gap": "1/564",
+      "c_float": 1.497340425531915,
+      "gap_float": 0.0017730496453900709,
+      "families": ["prod", "gauged"],
+      "labels": ["Ising x M(47,48)_D", "(Ising x M(47,48))/Z2diag"]
+    },
+    {
+      "c": "587/392",
+      "gap": "1/1568",
+      "c_float": 1.4974489795918366,
+      "gap_float": 0.0006377551020408163,
+      "families": ["prod"],
+      "labels": ["Ising x M(48,49)"]
+    },
+    {
+      "c": "587/392",
+      "gap": "1/588",
+      "c_float": 1.4974489795918366,
+      "gap_float": 0.0017006802721088435,
+      "families": ["prod", "gauged"],
+      "labels": ["Ising x M(48,49)_D", "(Ising x M(48,49))/Z2diag"]
+    },
+    {
+      "c": "3669/2450",
+      "gap": "3/4900",
+      "c_float": 1.4975510204081632,
+      "gap_float": 0.0006122448979591836,
+      "families": ["prod"],
+      "labels": ["Ising x M(49,50)"]
+    },
+    {
+      "c": "3669/2450",
+      "gap": "2/1225",
+      "c_float": 1.4975510204081632,
+      "gap_float": 0.0016326530612244899,
+      "families": ["prod", "gauged"],
+      "labels": ["Ising x M(49,50)_D", "(Ising x M(49,50))/Z2diag"]
+    },
+    {
+      "c": "1273/850",
+      "gap": "1/1700",
+      "c_float": 1.4976470588235293,
+      "gap_float": 0.000588235294117647,
+      "families": ["prod"],
+      "labels": ["Ising x M(50,51)"]
+    },
+    {
+      "c": "1273/850",
+      "gap": "2/1275",
+      "c_float": 1.4976470588235293,
+      "gap_float": 0.001568627450980392,
+      "families": ["prod", "gauged"],
+      "labels": ["Ising x M(50,51)_D", "(Ising x M(50,51))/Z2diag"]
+    }
+  ],
+  "c_3_2_points": [
+    {
+      "c": "3/2",
+      "gap": "1/50",
+      "c_float": 1.5,
+      "gap_float": 0.02,
+      "families": ["prod", "c32"],
+      "labels": ["Ising x SU(2)_1/I", "SU(2)_1/I x Ising"]
+    },
+    {
+      "c": "3/2",
+      "gap": "1/36",
+      "c_float": 1.5,
+      "gap_float": 0.027777777777777776,
+      "families": ["c32"],
+      "labels": ["SU(2)_2/Z6", "SU(2)_2/D6"]
+    },
+    {
+      "c": "3/2",
+      "gap": "1/32",
+      "c_float": 1.5,
+      "gap_float": 0.03125,
+      "families": ["prod", "c32"],
+      "labels": ["Ising x SU(2)_1/O", "SU(2)_1/O x Ising"]
+    },
+    {
+      "c": "3/2",
+      "gap": "1/25",
+      "c_float": 1.5,
+      "gap_float": 0.04,
+      "families": ["c32"],
+      "labels": ["SU(2)_2/I", "SU(2)_2/(I x Z2c)", "SU(2)_2/Z5", "SU(2)_2/D5"]
+    },
+    {
+      "c": "3/2",
+      "gap": "1/20",
+      "c_float": 1.5,
+      "gap_float": 0.05,
+      "families": ["prod"],
+      "labels": ["TCI x M(5,6)"]
+    },
+    {
+      "c": "3/2",
+      "gap": "1/18",
+      "c_float": 1.5,
+      "gap_float": 0.05555555555555555,
+      "families": ["prod", "c32"],
+      "labels": ["Ising x SU(2)_1/T", "Bos(Majorana x Fer_h(SU(2)_1/T)) = (Ising x SU(2)_1/T)/Z2[eta h]", "SU(2)_1/T x Ising", "(SU(2)_1/T x Ising)/(h x flip)"]
+    },
+    {
+      "c": "3/2",
+      "gap": "1/16",
+      "c_float": 1.5,
+      "gap_float": 0.0625,
+      "families": ["gauged", "c32"],
+      "labels": ["Sym^3(Ising)", "SU(2)_2/O", "SU(2)_2/(O x Z2c)", "Ising^3/S4 [dual even flips x| S3], no torsion", "Ising^3/S3", "SU(2)_2/Z4", "SU(2)_2/D4"]
+    },
+    {
+      "c": "3/2",
+      "gap": "3/40",
+      "c_float": 1.5,
+      "gap_float": 0.075,
+      "families": ["pf_orb", "pf", "w", "prod", "coset"],
+      "labels": ["Z10 parafermion SU(2)_10/U(1)", "Sp(6)_2/(SU(2)_2 x Sp(4)_2)", "so(5)_2 x so(5)_1 / so(5)_3 (diagonal) = WB(2) minimal", "Z10 parafermion (diagonal)", "Z10 parafermion / C (charge-conjugation orbifold of diagonal)", "Z10 parafermion / Cg (odd-reflection orbifold of diagonal)", "TCI x Potts", "TCI x Potts3", "W10 minimal model p=11 = Z10 parafermion", "Sp(4)_1xSp(4)_2/Sp(4)_3", "Sp(4)_1xSp(4)_2/Sp(4)_3 [automorphism (permutation): SC J=(0, 0, 1) order 2 h_J=9/2 X=1/2]", "Sp(4)_1xSp(4)_2/Sp(4)_3 [extension: SC J=(0, 1, 0) order 2 h_J=3 X=0]", "Z10 parafermion / charge conjugation (SU(2)_10/O(2))"]
+    },
+    {
+      "c": "3/2",
+      "gap": "1/12",
+      "c_float": 1.5,
+      "gap_float": 0.08333333333333333,
+      "families": ["pf_orb"],
+      "labels": ["Z10 parafermion / D2 (sigma=+) [appendix]"]
+    },
+    {
+      "c": "3/2",
+      "gap": "1/9",
+      "c_float": 1.5,
+      "gap_float": 0.1111111111111111,
+      "families": ["gauged", "c32"],
+      "labels": ["Ising^3/Z3 (cyclic)", "SU(2)_2/T", "SU(2)_2/(T x Z2c) and SU(2)_2/(T,w2-torsion)", "SU(2)_2/O_chi (= T_d on 3 Majoranas) and SU(2)_2/(O x Z2c, chi-torsion)", "Ising^3/Z6 [Z3 perm x eta1eta2eta3]", "Ising^3/A4 [dual even flips x| Z3]", "Ising^3/S4 [dual even flips x| S3], torsion", "Ising^3/(A4 x Z2) [all flips x| Z3]", "Ising^3/S4' [even flips x| S3, transpositions dressed by eta]", "Ising^3/Z3", "SU(2)_2/Z3", "SU(2)_2/D3"]
+    },
+    {
+      "c": "3/2",
+      "gap": "1/8",
+      "c_float": 1.5,
+      "gap_float": 0.125,
+      "families": ["pf_orb", "w", "prod", "gauged", "c32"],
+      "labels": ["N=2 minimal model k=2 (bosonized)", "(TCI x M(5,6)) Fibonacci-condensed", "Ising^3", "Ising x Dirac (Ising^3 ext by psi_i psi_j)", "Z10 parafermion / D2 (sigma=-) [appendix]", "Z10 parafermion E6-type / C [appendix]", "N=2 MM k=2, diagonal bosonization", "(TCI x M(5,6))/Z2diag", "TCI x M(5,6) Fib-condensed", "Ising x Dirac", "Sp(4)_1xSp(4)_2/Sp(4)_3 [extension: product of factor invariants #0,0,2 of (C2_1,C2_2,C2_3) [factor invariants class-preserving and center-equivariant]]", "SU(2)_2/Z2", "SU(2)_2/D2"]
+    },
+    {
+      "c": "3/2",
+      "gap": "2/15",
+      "c_float": 1.5,
+      "gap_float": 0.13333333333333333,
+      "families": ["pf"],
+      "labels": ["Z10 parafermion D-type automorphism (= Z2 orbifold)", "W10 minimal model p=11 = Z10 parafermion [automorphism (permutation): SC J=(0, 0, 5) order 2 h_J=5/2 X=1/2]"]
+    },
+    {
+      "c": "3/2",
+      "gap": "7/40",
+      "c_float": 1.5,
+      "gap_float": 0.175,
+      "families": ["pf", "w"],
+      "labels": ["Z10 parafermion E6-type (SU(2)_10 E6 x U(1))", "Sp(4)_1xSp(4)_2/Sp(4)_3 [extension: product of factor invariants #0,1,2 of (C2_1,C2_2,C2_3) [factor invariants class-preserving and center-equivariant]]"]
+    },
+    {
+      "c": "3/2",
+      "gap": "5/24",
+      "c_float": 1.5,
+      "gap_float": 0.20833333333333334,
+      "families": ["gauged"],
+      "labels": ["(TCI x Potts) Fibonacci-condensed", "TCI x Potts3 U(1)-extended"]
+    },
+    {
+      "c": "3/2",
+      "gap": "1/4",
+      "c_float": 1.5,
+      "gap_float": 0.25,
+      "families": ["gauged", "c32"],
+      "labels": ["Ising^3/Z2(eta1 eta2 eta3)", "Ising^3/Z2(psi psi psi)", "Ising^3/Z2 (diagonal flip)"]
+    },
+    {
+      "c": "3/2",
+      "gap": "3/8",
+      "c_float": 1.5,
+      "gap_float": 0.375,
+      "families": ["gauged", "c32"],
+      "labels": ["SU(2)_2 WZW", "SU(2)_2 (as Ising^3 extension)"]
+    }
+  ]
+}

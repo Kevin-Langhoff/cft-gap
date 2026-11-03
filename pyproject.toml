@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "modular-bootstrap-2d"
+version = "1.0.0"
+description = "Primal search and certified dual bounds on 2d CFT spectra from modular invariance"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [
+    { name = "Nathan Benjamin" },
+    { name = "Kevin Langhoff" },
+    { name = "Wei Li" },
+    { name = "Jesse Thaler" },
+]
+dependencies = ["numpy", "scipy", "mpmath", "matplotlib", "torch", "python-flint"]
+
+[project.optional-dependencies]
+sdpa = ["sdpa-multiprecision"]   # SDPA-GMP backend (provides `import sdpap`): certified numbers without SDPB
+
+[tool.setuptools.packages.find]
+include = ["primal*", "dual*"]
+
+[tool.setuptools.package-data]
+primal = ["data/reference/*.json"]
