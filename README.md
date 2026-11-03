@@ -16,6 +16,12 @@ charge c:
   in a window of dimensions. A certified bracket that contains no admissible
   whole number excludes the gap.
 
+![Fig. 1](docs/fig1.png)
+
+*Fig. 1 of the paper: the primal search boundary (blue, Delta_max = 6) and the dual bounds (orange; the solid line is the non-integral bound c/6 + 1/3 of Collier, Lin and Yin); the shaded region is excluded. Grey crosses are known CFTs. The data behind it are in [`data/paper/`](data/paper/README.md).*
+
+Only the arbitrary-precision dual backends give certified numbers; what "certified" means, and its assumptions (twist gap, parity for spin 1, spins up to `l_check`), is spelled out in [`dual/README.md`](dual/README.md#what-is-certified).
+
 ## Install
 
 ```bash
@@ -46,26 +52,6 @@ a laptop in under a minute. Settings and measured costs are in
 [`reproduce/README.md`](reproduce/README.md). The numbers drawn in Fig. 1, with
 the certificate behind each dual point, are in
 [`data/paper/`](data/paper/README.md).
-
-## What is certified
-
-- `scipy_lp` (float64) results are diagnostics. Only the arbitrary-precision
-  backends (SDPB, SDPA-GMP) give certified numbers, and their functionals are
-  re-verified independently of the solver.
-- A window count bracket [A, B] is certified only if both functionals pass the
-  whole-window interval certificate, the exact positivity certificate on the
-  spins the SDP imposed, and the post-check of the spins it left out up to
-  `l_check` (90 in the paper). The rigorous bracket is
-  [A / (|a0| + delta_lo), B / (|a0| - delta_up)]. The one function that runs
-  all of these gates is `dual.scan.count_bracket.certified_count_bracket`.
-- Certified exclusions hold for spectra with a twist gap (no conserved
-  currents) and are checked through spin `l_check`. Spin-1 windows count
-  parity pairs, so admissible spin-1 counts lie on 2Z (this assumes parity);
-  spin-0 counts lie on Z.
-- Lambda is quoted as in the paper, odd: the code's `Lambda = 20` is the
-  paper's Lambda = 19.
-- A primal point is a candidate iff its loss on 952 fixed torus points is
-  L < 25, with the float64 rounding error of each term included (kappa = 4).
 
 ## Citation
 

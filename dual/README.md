@@ -35,3 +35,21 @@ python reproduce/count_bracket.py --c 1.14 --gap 0.5171052631578946 --spin 1 --w
 - `backends/`: `sdpb` (the paper's solver, through `SDPB_SIF`), `sdpa_gmp`
   (arbitrary precision, `pip install sdpa-multiprecision`), `scipy_lp` and
   `cutting_plane` (float64: fast, diagnostic only).
+
+## What is certified
+
+- `scipy_lp` (float64) results are diagnostics. Only the arbitrary-precision
+  backends (SDPB, SDPA-GMP) give certified numbers, and their functionals are
+  re-verified independently of the solver.
+- A window count bracket [A, B] is certified only if both functionals pass the
+  whole-window interval certificate, the exact positivity certificate on the
+  spins the SDP imposed, and the post-check of the spins it left out up to
+  `l_check` (90 in the paper). The rigorous bracket is
+  [A / (|a0| + delta_lo), B / (|a0| - delta_up)]. The one function that runs
+  all of these gates is `dual.scan.count_bracket.certified_count_bracket`.
+- Certified exclusions hold for spectra with a twist gap (no conserved
+  currents) and are checked through spin `l_check`. Spin-1 windows count
+  parity pairs, so admissible spin-1 counts lie on 2Z (this assumes parity);
+  spin-0 counts lie on Z.
+- Lambda is quoted as in the paper, odd: the code's `Lambda = 20` is the
+  paper's Lambda = 19.
