@@ -20,8 +20,6 @@ charge c:
 
 *Fig. 1 of the paper: the primal search boundary (blue, Delta_max = 6) and the dual bounds (orange; the solid line is the non-integral bound c/6 + 1/3 of Collier, Lin and Yin); the shaded region is excluded. Grey crosses are known CFTs. The data behind it are in [`data/paper/`](data/paper/README.md).*
 
-Only the arbitrary-precision dual backends give certified numbers; what "certified" means, and its assumptions (twist gap, parity for spin 1, spins up to `l_check`), is spelled out in [`dual/README.md`](dual/README.md#what-is-certified).
-
 ## Install
 
 ```bash
@@ -53,6 +51,3 @@ a laptop in under a minute. Settings and measured costs are in
 the certificate behind each dual point, are in
 [`data/paper/`](data/paper/README.md).
 
-## Citation
-
-Please cite the paper.
