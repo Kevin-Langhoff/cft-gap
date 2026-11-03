@@ -67,7 +67,6 @@ the certificate behind each dual point, are in
 - A primal point is a candidate iff its loss on 952 fixed torus points is
   L < 25, with the float64 rounding error of each term included (kappa = 4).
 
-## Citation and license
+## Citation
 
-Cite the paper (see [`CITATION.cff`](CITATION.cff)). The code is released
-under the MIT license ([`LICENSE`](LICENSE)).
+Please cite the paper.

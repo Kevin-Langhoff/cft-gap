@@ -8,8 +8,6 @@ version = "1.0.0"
 description = "Primal search and certified dual bounds on 2d CFT spectra from modular invariance"
 readme = "README.md"
 requires-python = ">=3.10"
-license = "MIT"
-license-files = ["LICENSE"]
 authors = [
     { name = "Nathan Benjamin" },
     { name = "Kevin Langhoff" },
