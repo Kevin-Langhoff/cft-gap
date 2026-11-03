@@ -2,7 +2,7 @@
 
 For a proposed (c, gap), the dual method builds linear functionals on the
 modular crossing equation that minimize and maximize the number of primaries of
-one spin in a window of dimensions, giving a bracket [A, B] on that count for
+one spin in a window of dimensions, giving a bracket [A, B] (the paper's [N_W^-, N_W^+]) on that count for
 every spectrum with that gap. Counts are whole numbers, so a certified bracket
 that contains no admissible count excludes the gap. Everything runs at
 200-digit precision in `mpmath`.
@@ -47,9 +47,10 @@ python reproduce/count_bracket.py --c 1.14 --gap 0.5171052631578946 --spin 1 --w
   `l_check` (90 in the paper). The rigorous bracket is
   [A / (|a0| + delta_lo), B / (|a0| - delta_up)]. The one function that runs
   all of these gates is `dual.scan.count_bracket.certified_count_bracket`.
-- Certified exclusions hold for spectra with a twist gap (no conserved
-  currents) and are checked through spin `l_check`. Spin-1 windows count
-  parity pairs, so admissible spin-1 counts lie on 2Z (this assumes parity);
-  spin-0 counts lie on Z.
+- Certified exclusions assume, as in the paper, parity symmetry and no
+  conserved currents beyond the stress tensor (a twist gap), and are checked
+  through spin `l_check`. Spin-1 windows count parity pairs; the code counts
+  primaries (two per pair), so its admissible spin-1 counts are even ("2Z"),
+  and spin-0 counts are any integer ("Z").
 - Lambda is quoted as in the paper, odd: the code's `Lambda = 20` is the
   paper's Lambda = 19.

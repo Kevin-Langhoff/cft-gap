@@ -4,9 +4,9 @@ At each point (c, Delta_gap) the primal method tries to build a truncated
 spectrum (primaries up to Delta_max, with a few adjustable dimensions and
 degeneracies) whose torus partition function is invariant under tau -> -1/tau
 within its truncation error, tested on 952 fixed values of tau. If the
-optimizer gets the loss below L = 25 the point is a **candidate**; if every
-restart fails it is **excluded by the search**. This is a non-convex search:
-a candidate is evidence that a consistent truncated spectrum exists, an
+optimizer gets the loss below L_eval = 25 the point is **admitted** (the code
+calls it a candidate); if every restart fails it is **excluded by the search**.
+This is a non-convex search: an admitted point is evidence that a consistent truncated spectrum exists, an
 exclusion only that none was found, and points near the boundary are
 sensitive to float-level details, so verdicts are statements about classes of
 points. The dual method (`../dual/`) gives the certified counterpart.
@@ -24,8 +24,8 @@ python reproduce/primal_scan.py --small   # the landscape scan of the paper, ~40
 - `partition.py`: the reduced partition function of a spectrum and the
   reference series used for the truncation-error estimate.
 - `spectrum.py`: the starting spectrum (ansatz) at one (c, Delta_gap) point.
-- `optimize.py`: the modular-invariance loss and the batched optimizer
-  `run_batched_survey`.
+- `optimize.py`: the modular-invariance loss and the batched SVEN optimizer
+  `run_batched_survey` (k_SV = 8 (Delta_max - 2) singular directions by default).
 - `warm_start.py`: warm starts for the landscape scan: carry converged
   parameters to a neighbouring point (`lift_init`), encode a known spectrum as
   a starting point, and the compactified free-boson spectrum

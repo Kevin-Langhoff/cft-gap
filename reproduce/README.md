@@ -22,7 +22,7 @@ c - 1 toward c = 1 and from low gap upward. The scrub re-tries every excluded
 cell that touches a candidate from that candidate's parameters; refinement
 subdivides the cells that straddle the threshold.
 
-- **Verdict:** candidate iff L < 25 on the 952 fixed torus points
+- **Verdict:** admitted iff L_eval < 25 on the 952 fixed modular parameters
   (`sigma_round_kappa = 4`, `sigma_epsilon = 0`, `tau2_max = Delta_max + 2`).
 - **Paper setting:** Delta_max = 6; three sectors, each a 20 x 20 grid over
   Delta_gap in [0.04, 0.60]: `log` (c - 1 in [1e-4, 1e-2], log-spaced), `lin`
@@ -42,7 +42,8 @@ python reproduce/count_bracket.py --c 1.14 --gap 0.5171052631578946 --spin 1 --w
 
 Bounds the number of primaries of one spin in a window, `[gap, gap + w]` for
 spin 0 and `[1, 1 + w]` for spin 1, for every unitary modular-invariant
-spectrum with a twist gap whose non-vacuum scalars all have Delta >= gap. The
+parity-symmetric spectrum with no conserved currents beyond the stress tensor
+whose non-vacuum scalars all have Delta >= gap. The
 bracket is certified only if both sides pass the whole-window interval
 certificate, the exact positivity certificate on spins 0..lmax and the
 post-check on lmax < l <= l_check; the verdict is printed with its assumptions
@@ -74,8 +75,9 @@ python reproduce/gap_bound_integrality.py --c 1.001 --spin 1 --widths 3.6 4.0 4.
 ```
 
 A certified bracket at gap g with no admissible count (spin 0: no integer;
-spin 1: no even integer) proves Delta_gap < g for spectra with a twist gap,
-parity-invariant for the spin-1 lattice, with spins <= l_check checked. For
+spin 1: no integer number of parity pairs) proves Delta_gap < g for
+parity-symmetric spectra with no conserved currents beyond the stress tensor,
+with spins <= l_check checked. For
 each window width the script searches downward in g for the smallest such
 exclusion and reports Delta* = min over w of g_exc(w), with every probe.
 `--search bisect` bisects instead of walking; `--resume` continues a stopped

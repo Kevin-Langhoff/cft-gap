@@ -4,7 +4,7 @@
 |---|---|---|
 | [`fig1_data.json`](fig1_data.json) | Fig. 1 (the (c, gap) plane) | the record the Fig. 1 script drew (the PDF in the paper is byte-identical to its output), plus the unrounded primal polyline and refinement anchors |
 | [`cft_census_points.json`](cft_census_points.json) | Fig. 1, grey crosses and bar | the known CFTs the same script drew |
-| [`count_containment.json`](count_containment.json) | Supplemental Material, window counts of a candidate spectrum (spin-1 panel) | certified spin-1 count brackets against a Delta_max = 6 search spectrum |
+| [`count_containment.json`](count_containment.json) | Supplemental Material, window counts of an admitted search spectrum (spin-1 panel) | certified spin-1 count brackets against a Delta_max = 6 search spectrum |
 
 Numbers are bit-identical to the records the figure scripts read; only file
 names, run identifiers and scheduling notes were removed, and labels were
@@ -15,9 +15,10 @@ data is not in this directory.
 
 - **Lambda** is quoted as in the paper (odd). Code values appear in the key
   `s1_L20` and in `count_containment.json` (`Lambda` = 20 is the paper's 19).
-- **Counts.** Spin-1 windows [1, 1 + w] count parity pairs, so admissible
-  spin-1 counts lie on 2Z in units of primaries (this assumes parity). Scalar
-  windows [gap, gap + w] have counts on Z. `count_containment.json` stores
+- **Counts.** As in the paper, spin-1 windows [1, 1 + w] count parity pairs
+  and scalar windows [gap, gap + w] count scalars; both must be integers. The
+  records count primaries (two per spin-1 pair), so an admissible spin-1 count
+  there is even. `count_containment.json` stores
   spin-1 counts in primaries; divide by 2 for the pairs the figure plots.
 - **Certificate or diagnostic.** A bracket is a certificate only if the window
   constraint is proven on the whole window and the all-spin post-check is
@@ -30,9 +31,9 @@ data is not in this directory.
   relative tolerance 1e-13, with the raw [A, B] used. A bracket widened by a
   modelled or densely sampled window dip (eta) is not a certificate. The
   post-check runs through spin 90, a finite extension. Certified exclusions
-  hold for spectra with a twist gap (no conserved currents).
+  assume parity and no conserved currents beyond the stress tensor.
 - **Search.** L = exp(S) - 1 with S = mean log(1 + (R / sigma)^2); a spectrum
-  is a candidate iff L < 25. Search results are never exclusions.
+  is admitted iff L < 25. Search results are never exclusions.
 
 ## `fig1_data.json`
 
@@ -41,7 +42,7 @@ data is not in this directory.
 | `search.navy_points` | the drawn primal boundary at Delta_max = 6 for 1.0001 <= c <= 1.1, [c, gap], 1759 points rounded to 5 decimals |
 | `search.navy_points_full_precision` | the same polyline unrounded |
 | `search.survey_contours` | the boundary for c > 1.1: (c - 1, gap) pairs of the L = 25 contour of the survey |
-| `refinement.anchors` | the 163 bisected charges the line below c = 1.1 interpolates: drawn `gap`, the last candidate `lower`, the first excluded `upper`, their scores, the bisection `tolerance` |
+| `refinement.anchors` | the 163 bisected charges the line below c = 1.1 interpolates: drawn `gap`, the last admitted `lower`, the first excluded `upper`, their scores, the bisection `tolerance` |
 | `s0.points` | the spin-0 dual curve at Lambda = 19: 57 points (`c`, `gap`, `tier`, `W` where stored) |
 | `s1_L20.points` | the spin-1 dual curve at Lambda = 19: 44 points (`c`, `gap`, `W`) |
 | `strongest_s1` | the ten Lambda = 59 spin-1 points (diamonds): `c`, `gap`, `W`, `dip` (how each was certified) |
