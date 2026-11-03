@@ -3,7 +3,7 @@
 Code and data for **"Constraining the spectral gap of 2d CFTs just above c = 1"**
 (N. Benjamin, K. Langhoff, W. Li, J. Thaler; MIT-CTP/6144).
 
-Two independent methods, sharing no code, bound the spectral gap (the dimension
+Two independent methods bound the spectral gap (the dimension
 of the lightest non-vacuum scalar) of 2d CFTs as a function of the central
 charge c:
 
